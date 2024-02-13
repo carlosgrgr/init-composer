@@ -1,1 +1,18 @@
-# Composer
+# Basic commands Composer
+- ´docker -v´ Obtener la versión de Docker
+- ´docker images´ Listado de imágenes disponibles en local
+- ´docker pull [imageName]´ Descargar una imagen de docker hub
+- ´docker pull [registry_url/imageName]´ Descargar una imagen de un repositorio distinto a docker hub
+- ´docker run [imageName]´ Crear un contenedor a partir de la imagen ´imageName´
+- ´docker run -d [imageName]´ Crear un contenedor en segundo plano a partir de la imagen ´imageName´
+- ´docker run -p [container_port:local_port] [imageName]´ Mapear un puerto del contenedor con un puerto de mi local
+- ´docker ps´ Listado de contenedores que se están ejecutando ahora mismo
+- ´docker ps -a´ Listado de contenedores creados en local
+- ´docker exec -ti [containerId]´ Entrar en modo interactivo del contenedor ´[containerId]´
+- ´docker exec -ti [containerId] [cmd]´ Ejecutar un comando dentro del contenedor
+- ´docker start [containerId]´ Levanta un contenedor
+- ´docker stop [containerId]´ Parar un contenedor
+- ´docker rm [containerId]´ Eliminar un contenedor
+- ´docker system prune´ Eliminar contenedores e imágenes que no están en funcionamiento
+- ´docker logs [containerId]´ Listado de los logs del contenedor
+- ´docker logs -f [containerId]´ Deja abierto los logs del contenedor y los va actualizando
